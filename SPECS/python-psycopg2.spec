@@ -32,9 +32,9 @@ features offered by PostgreSQL.
 Summary:	%{sum}
 Name:		python-%{srcname}
 Version:	2.8.6
-Release:	2%{?dist}
+Release:	3%{?dist}
 # The exceptions allow linking to OpenSSL and PostgreSQL's libpq
-License:	LGPLv3+ with exceptions
+License:	LGPL-3.0-or-later WITH openvpn-openssl-exception
 Url:		http://initd.org/psycopg/
 
 Source0:	http://initd.org/psycopg/tarballs/PSYCOPG-2-8/psycopg2-%{version}.tar.gz
@@ -283,6 +283,10 @@ done
 
 
 %changelog
+* Sun Oct 29 2023 Ondrej Sloup <osloup@redhat.com> - 2.8.6-3
+- Update license tag to the SPDX format
+- Resolves: RHEL-12994
+
 * Fri Jan 15 2021 Tomas Orsava <torsava@redhat.com> - 2.8.6-2
 - Convert from Fedora to the python39 module in RHEL8
 - Resolves: rhbz#1877430
